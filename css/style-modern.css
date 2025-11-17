@@ -215,6 +215,21 @@ a:hover {
     color: var(--gray-400);
 }
 
+.header-guarantee-badge {
+    background: linear-gradient(135deg, #00D9B8 0%, #00B89F 100%);
+    color: var(--white) !important;
+    padding: var(--space-2) var(--space-6);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: var(--text-sm);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
 .header-actions {
     display: flex;
     gap: var(--space-6);
@@ -1274,6 +1289,181 @@ a:hover {
 .btn-guarantee:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-2xl);
+}
+
+/* ========================================
+   GUARANTEE SECTION MEGA
+   ======================================== */
+
+.guarantee-section-mega {
+    padding: var(--space-32) 0;
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.guarantee-section-mega::before {
+    content: '💰';
+    position: absolute;
+    font-size: 30rem;
+    opacity: 0.03;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.guarantee-content-mega {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--white);
+}
+
+.guarantee-mega-badge {
+    display: inline-block;
+    background: rgba(0, 217, 184, 0.3);
+    padding: var(--space-3) var(--space-8);
+    border-radius: 30px;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-8);
+    border: 2px solid var(--accent);
+}
+
+.guarantee-mega-title {
+    font-size: var(--text-7xl);
+    color: var(--white);
+    margin-bottom: var(--space-12);
+    line-height: 1.1;
+}
+
+.guarantee-mega-box {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: var(--space-6);
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto var(--space-12);
+    padding: var(--space-10);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.guarantee-mega-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: var(--space-8);
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.guarantee-mega-icon {
+    font-size: 4rem;
+    margin-bottom: var(--space-4);
+}
+
+.guarantee-mega-item h3 {
+    font-size: var(--text-2xl);
+    color: var(--white);
+    margin-bottom: var(--space-3);
+}
+
+.guarantee-mega-item p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-base);
+}
+
+.guarantee-mega-arrow {
+    font-size: var(--text-5xl);
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.guarantee-mega-highlight {
+    max-width: 900px;
+    margin: 0 auto var(--space-12);
+    padding: var(--space-10);
+    background: rgba(0, 217, 184, 0.2);
+    border-radius: 20px;
+    border: 3px solid var(--accent);
+}
+
+.guarantee-mega-highlight p {
+    color: var(--white);
+    line-height: 1.8;
+}
+
+.btn-guarantee-mega {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    background: var(--accent);
+    color: var(--dark);
+    padding: var(--space-6) var(--space-12);
+    border-radius: 16px;
+    font-size: var(--text-xl);
+    font-weight: 800;
+    transition: var(--transition);
+    box-shadow: var(--shadow-2xl);
+}
+
+.btn-guarantee-mega:hover {
+    background: var(--white);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.btn-guarantee-mega small {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.guarantee-mega-proof {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.proof-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-6);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.proof-item strong {
+    font-size: var(--text-5xl);
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.proof-item span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-sm);
+}
+
+.pulse-animation {
+    animation: cardPulse 3s infinite;
+}
+
+@keyframes cardPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: var(--shadow-md);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 102, 255, 0.6);
+    }
 }
 
 /* ========================================
