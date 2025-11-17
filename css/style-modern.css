@@ -2638,19 +2638,309 @@ body.loaded .footer-new {
         grid-template-columns: 1fr;
         gap: var(--space-8);
     }
-    
+
     .footer-guarantee-content h3 {
         font-size: var(--text-2xl);
     }
-    
+
     .btn-footer-guarantee {
         font-size: var(--text-base);
         padding: var(--space-4) var(--space-8);
     }
-    
+
     .container-header,
     .container-footer,
     .container-guarantee {
         padding: 0 var(--space-4);
     }
 }
+
+/* ========================================
+   AMÉLIORATIONS VISUELLES PAGES PRODUITS
+   ======================================== */
+
+/* Cards produits améliorées */
+.product-card,
+.product-range-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.product-card:hover,
+.product-range-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Grilles responsive améliorées */
+.grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+}
+
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+    .grid-2-cols,
+    .grid-3-cols {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid-3-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Amélioration des FAQ */
+.faq-card {
+    transition: all 0.2s ease;
+    border-left-width: 4px;
+}
+
+.faq-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Badges de fonctionnalités */
+.feature-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    background: white;
+    border-radius: 100px;
+    border: 2px solid;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.feature-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Séparateurs visuels */
+.section-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+    margin: var(--space-20) 0;
+}
+
+/* Icônes de gamme améliorées */
+.product-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.product-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Cartes techniques de personnalisation */
+.technique-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--gray-200);
+    transition: all 0.3s ease;
+}
+
+.technique-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-color: var(--primary);
+}
+
+.technique-header {
+    padding: var(--space-6);
+    text-align: center;
+    color: white;
+}
+
+.technique-body {
+    padding: var(--space-6);
+}
+
+/* Tags de prix améliorés */
+.price-tag {
+    padding: var(--space-4);
+    border-radius: 8px;
+    margin-bottom: var(--space-4);
+    font-weight: 600;
+}
+
+/* Listes à puces stylisées */
+.styled-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+}
+
+.styled-list li {
+    display: flex;
+    align-items: start;
+    gap: var(--space-2);
+}
+
+/* Section CTA améliorée */
+.cta-section {
+    padding: var(--space-20) 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary) 0%, #0052CC 100%);
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+    margin-bottom: var(--space-4);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--space-8);
+}
+
+.cta-btn-primary {
+    background: white;
+    color: var(--primary);
+    padding: var(--space-5) var(--space-10);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: var(--text-lg);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn-secondary {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: var(--space-5) var(--space-10);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: var(--text-lg);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.cta-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Conteneur section avec meilleure largeur */
+.container-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+}
+
+@media (max-width: 640px) {
+    .container-section {
+        padding: 0 var(--space-4);
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-btn-primary,
+    .cta-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Amélioration espacement des sections */
+.section-padding {
+    padding: var(--space-24) 0;
+}
+
+.section-padding-large {
+    padding: var(--space-32) 0;
+}
+
+/* Background patterns */
+.bg-pattern-dots {
+    background-image: radial-gradient(circle, var(--gray-300) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.bg-gradient-light {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+/* Animations subtiles */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-in {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* Amélioration accessibilité focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Spacing utilities */
+.mb-0 { margin-bottom: 0 !important; }
+.mb-2 { margin-bottom: var(--space-2) !important; }
+.mb-4 { margin-bottom: var(--space-4) !important; }
+.mb-6 { margin-bottom: var(--space-6) !important; }
+.mb-8 { margin-bottom: var(--space-8) !important; }
+.mb-12 { margin-bottom: var(--space-12) !important; }
+.mb-16 { margin-bottom: var(--space-16) !important; }
+
+.mt-0 { margin-top: 0 !important; }
+.mt-4 { margin-top: var(--space-4) !important; }
+.mt-8 { margin-top: var(--space-8) !important; }
+.mt-12 { margin-top: var(--space-12) !important; }
+.mt-16 { margin-top: var(--space-16) !important; }
