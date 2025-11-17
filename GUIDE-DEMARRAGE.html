@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMEXA - Guide de Démarrage Rapide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2563EB, #8B5CF6);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: -3rem -2rem 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #2563EB;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2563EB;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+        
+        h3 {
+            color: #334155;
+            margin: 1.5rem 0 1rem;
+            font-size: 1.25rem;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .highlight {
+            background: #fef3c7;
+            padding: 1.5rem;
+            border-left: 4px solid #f59e0b;
+            margin: 1.5rem 0;
+        }
+        
+        .success {
+            background: #d1fae5;
+            padding: 1.5rem;
+            border-left: 4px solid #10b981;
+            margin: 1.5rem 0;
+        }
+        
+        .warning {
+            background: #fee2e2;
+            padding: 1.5rem;
+            border-left: 4px solid #ef4444;
+            margin: 1.5rem 0;
+        }
+        
+        strong {
+            color: #1e293b;
+            font-weight: 600;
+        }
+        
+        a {
+            color: #2563EB;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .checklist li::before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 PROMEXA</h1>
+            <p class="subtitle">Guide de Démarrage Rapide - Votre Site Web Complet</p>
+        </header>
+
+        <div class="card">
+            <h2>📦 Contenu Livré</h2>
+            <p>Vous avez reçu un site web professionnel complet pour lancer PROMEXA :</p>
+            <ul class="checklist">
+                <li><strong>Site responsive</strong> : Design moderne avec angles vifs, gradients bleu-violet</li>
+                <li><strong>Architecture SEO</strong> : Structure 200+ pages prête, meta tags optimisés</li>
+                <li><strong>Page d'accueil</strong> : Optimisée conversion avec CTA multiples</li>
+                <li><strong>Formulaire contact</strong> : Devis gratuit avec champs détaillés</li>
+                <li><strong>Pages produits</strong> : T-shirts et Polos (modèles complets réutilisables)</li>
+                <li><strong>Pages secteurs</strong> : BDE/Associations (modèle complet)</li>
+                <li><strong>Sitemap.xml & robots.txt</strong> : Configuration SEO optimale</li>
+            </ul>
+        </div>
+
+        <div class="highlight">
+            <h3>⚡ Démarrage Express (15 minutes)</h3>
+            <ol>
+                <li>Décompresser <code>promexa-site-complet.zip</code></li>
+                <li>Acheter domaine <strong>promexa.eu</strong> (OVH, Infomaniak, etc.)</li>
+                <li>Uploader tous les fichiers sur votre hébergement via FTP</li>
+                <li>Remplacer coordonnées téléphone/email dans les pages</li>
+                <li>✅ Votre site est en ligne !</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>🔥 Actions Prioritaires Semaine 1</h2>
+            
+            <h3>1. Personnalisation Basique</h3>
+            <ul>
+                <li>Remplacer <code>+33 (0)X XX XX XX XX</code> par votre vrai numéro</li>
+                <li>Remplacer <code>contact@promexa.eu</code> par votre email réel</li>
+                <li>Ajouter vraies adresses dans footer (si nécessaire)</li>
+                <li>Tester formulaire contact (configurer backend - voir README)</li>
+            </ul>
+
+            <h3>2. Google Configuration</h3>
+            <ul>
+                <li><strong>Google Search Console</strong> : Soumettre sitemap.xml</li>
+                <li><strong>Google Analytics</strong> : Installer code tracking</li>
+                <li><strong>Google My Business</strong> : Créer profil entreprise</li>
+            </ul>
+
+            <h3>3. Contenu Visuel</h3>
+            <ul>
+                <li>Remplacer emojis produits (👕👔🧥) par vraies photos</li>
+                <li>Ajouter logo PROMEXA dans header (remplacer texte)</li>
+                <li>Photos hero sections (recommandé : textiles en situation)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📈 Stratégie SEO - Dominer Google</h2>
+            
+            <div class="success">
+                <strong>Objectif :</strong> 1ère place Google sur "textile promotionnel", "t-shirt personnalisé entreprise", "polo brodé", etc.
+            </div>
+
+            <h3>Étape 1 : Créer Pages Manquantes (2-4 semaines)</h3>
+            <p>Utiliser les modèles fournis (t-shirts, polos, BDE) pour créer :</p>
+            <ul>
+                <li><strong>Produits restants</strong> : Sweats, vestes, casquettes, sacs, etc.</li>
+                <li><strong>Secteurs restants</strong> : Entreprises, startups, hôtellerie, santé, etc.</li>
+                <li><strong>Services</strong> : Broderie, sérigraphie, impression numérique, etc.</li>
+                <li><strong>Pages ville</strong> : "Textile promotionnel Paris", "Lyon", "Marseille"...</li>
+            </ul>
+
+            <h3>Étape 2 : Content Marketing (ongoing)</h3>
+            <ul>
+                <li>Blog : 2-3 articles/mois (guides, conseils, études de cas)</li>
+                <li>50-100 pages SEO long-tail ciblant requêtes spécifiques</li>
+                <li>Études de cas clients avec photos réalisations</li>
+            </ul>
+
+            <h3>Étape 3 : Backlinks</h3>
+            <ul>
+                <li>Annuaires professionnels B2B européens</li>
+                <li>Partenariats fournisseurs (Daiber, etc.)</li>
+                <li>Guest posts sur blogs corporate</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>💰 Optimisation Conversion</h2>
+            
+            <h3>Éléments Clés Déjà Implémentés</h3>
+            <ul class="checklist">
+                <li>Garantie "Prix le plus bas 5% moins cher"</li>
+                <li>Prix visibles "à partir de 4,90€"</li>
+                <li>CTA multiples (Devis Gratuit, Catalogue, Contact)</li>
+                <li>Trust indicators (livraison, qualité, délais)</li>
+                <li>Formulaire détaillé mais user-friendly</li>
+                <li>Réponse 24h garantie affichée partout</li>
+            </ul>
+
+            <h3>Tests A/B Recommandés</h3>
+            <ol>
+                <li>Couleur boutons CTA (bleu vs orange vs violet)</li>
+                <li>Texte boutons ("Devis Gratuit" vs "Demander Prix")</li>
+                <li>Longueur formulaire (court vs détaillé)</li>
+                <li>Prix affichés (gamme vs unique "à partir de")</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>🛠️ Configuration Technique</h2>
+
+            <h3>Formulaire Contact</h3>
+            <p>Actuellement front-end seulement. Rendre fonctionnel avec :</p>
+            <ul>
+                <li><strong>FormSubmit</strong> (gratuit, 2 minutes) : Modifier <code>action</code> du form vers FormSubmit</li>
+                <li><strong>EmailJS</strong> (gratuit) : Intégration JavaScript simple</li>
+                <li><strong>PHP backend</strong> : Si hébergement supporte PHP</li>
+            </ul>
+
+            <h3>Analytics Tracking</h3>
+            <p>Ajouter dans <code>&lt;head&gt;</code> de toutes les pages :</p>
+            <ul>
+                <li>Code Google Analytics 4</li>
+                <li>Facebook Pixel (si pub Facebook)</li>
+                <li>LinkedIn Insight Tag (si pub LinkedIn)</li>
+            </ul>
+
+            <h3>Performance</h3>
+            <ul>
+                <li>Optimiser images : format WebP, compression TinyPNG</li>
+                <li>Activer HTTPS : certificat SSL (Let's Encrypt gratuit)</li>
+                <li>CDN : Cloudflare (gratuit, améliore vitesse)</li>
+                <li>Minifier CSS/JS : versions .min pour production</li>
+            </ul>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ Important À Faire Maintenant</h3>
+            <ol>
+                <li><strong>Sauvegarder</strong> : Backup régulier de tous les fichiers</li>
+                <li><strong>Tester</strong> : Tous les liens avant mise en ligne</li>
+                <li><strong>Responsive</strong> : Vérifier affichage mobile/tablette</li>
+                <li><strong>Vitesse</strong> : Tester PageSpeed Insights (objectif >90)</li>
+                <li><strong>Emails</strong> : Configurer @promexa.eu (professionnel)</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>📊 Métriques de Succès</h2>
+
+            <h3>Mois 1-3</h3>
+            <ul>
+                <li>50-100 visiteurs/jour organiques</li>
+                <li>Top 10 Google sur 5-10 mots-clés</li>
+                <li>50 demandes devis/mois</li>
+                <li>Taux conversion formulaire >3%</li>
+            </ul>
+
+            <h3>Mois 4-6</h3>
+            <ul>
+                <li>200-300 visiteurs/jour</li>
+                <li>Top 3 Google sur 20 mots-clés</li>
+                <li>150 demandes/mois</li>
+                <li>20 clients réguliers</li>
+            </ul>
+
+            <h3>Mois 7-12</h3>
+            <ul>
+                <li>500+ visiteurs/jour</li>
+                <li>Top 1 sur mots-clés principaux</li>
+                <li>300+ demandes/mois</li>
+                <li>Leader reconnu secteur</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📚 Ressources & Documentation</h2>
+            <ul>
+                <li><strong>README.md</strong> : Documentation complète technique</li>
+                <li><strong>Google Search Console</strong> : <a href="https://search.google.com/search-console" target="_blank">search.google.com/search-console</a></li>
+                <li><strong>Google Analytics</strong> : <a href="https://analytics.google.com" target="_blank">analytics.google.com</a></li>
+                <li><strong>PageSpeed Insights</strong> : <a href="https://pagespeed.web.dev" target="_blank">pagespeed.web.dev</a></li>
+                <li><strong>FormSubmit</strong> : <a href="https://formsubmit.co" target="_blank">formsubmit.co</a></li>
+            </ul>
+        </div>
+
+        <div class="success">
+            <h3>✅ Checklist Lancement</h3>
+            <ul class="checklist">
+                <li>Domaine promexa.eu acheté</li>
+                <li>Hébergement configuré</li>
+                <li>Fichiers uploadés</li>
+                <li>Coordonnées mises à jour</li>
+                <li>Formulaire fonctionnel</li>
+                <li>Analytics installé</li>
+                <li>Search Console configuré</li>
+                <li>HTTPS activé</li>
+                <li>Test responsive OK</li>
+                <li>Tous liens testés</li>
+            </ul>
+        </div>
+
+        <div class="card" style="background: linear-gradient(135deg, #2563EB, #8B5CF6); color: white; border: none;">
+            <h2 style="color: white;">🎯 Go Live !</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 1rem;">
+                Votre site PROMEXA est prêt à conquérir le marché européen du textile promotionnel.
+            </p>
+            <p style="font-size: 1rem; opacity: 0.95;">
+                <strong>Prochaine étape :</strong> Upload les fichiers, configurez le domaine, et commencez à recevoir vos premiers devis !
+            </p>
+        </div>
+    </div>
+</body>
+</html>

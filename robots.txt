@@ -1,0 +1,24 @@
+# robots.txt pour PROMEXA
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://promexa.eu/sitemap.xml
+
+# Disallow admin/test pages (if any)
+Disallow: /admin/
+Disallow: /test/
+Disallow: /temp/
+
+# Allow important directories
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /produits/
+Allow: /secteurs/
+Allow: /services/
+Allow: /pages-seo/
+
+# Crawl-delay (optional, remove if not needed)
+# Crawl-delay: 1
