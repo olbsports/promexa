@@ -347,26 +347,39 @@ a:hover {
     transition: var(--transition);
 }
 
-/* Header scrollé - plus compact */
+/* Header scrollé - BEAUCOUP plus compact en hauteur */
+.header-new.scrolled .header-guarantee-bar {
+    display: none; /* Cache le bandeau garantie pour réduire la hauteur */
+}
+
+.header-new.scrolled .header-main {
+    padding: var(--space-2) 0; /* Réduit fortement la hauteur du header */
+}
+
 .header-new.scrolled .main-nav {
-    padding: var(--space-2) 0;
+    padding: 0; /* Supprime le padding pour gagner en hauteur */
 }
 
 .header-new.scrolled .logo-icon-svg {
-    width: 36px;
-    height: 36px;
+    width: 32px; /* Logo encore plus petit */
+    height: 32px;
 }
 
 .header-new.scrolled .logo-text {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg); /* Texte plus petit */
 }
 
 .header-new.scrolled .logo-tagline {
-    display: none;
+    display: none; /* Cache le tagline */
+}
+
+.header-new.scrolled .nav-link-new {
+    padding: var(--space-2) var(--space-4); /* Réduit les liens de navigation */
+    font-size: var(--text-sm);
 }
 
 .header-new.scrolled {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg); /* Ombre plus forte quand scrollé */
 }
 
 /* Logo Modern avec SVG */
@@ -523,12 +536,13 @@ a:hover {
     transform: translateY(0);
 }
 
-/* MEGA MENU - INJECTION DYNAMIQUE */
+/* MEGA MENU - INJECTION DYNAMIQUE FULL WIDTH */
 .megamenu {
-    position: absolute;
-    top: 100%;
+    position: fixed; /* Fixed pour prendre toute la largeur */
+    top: 100px; /* Position sous le header (à ajuster dynamiquement) */
     left: 0;
     right: 0;
+    width: 100vw; /* Full width explicite */
     background: var(--white);
     border-top: 1px solid var(--gray-200);
     box-shadow: var(--shadow-2xl);
@@ -539,6 +553,12 @@ a:hover {
     z-index: 999;
     max-height: 0;
     overflow: hidden;
+}
+
+/* Ajustement position quand header scrollé */
+.header-new.scrolled ~ * .megamenu,
+.header-new.scrolled .megamenu {
+    top: 60px; /* Hauteur réduite du header scrollé */
 }
 
 /* Afficher le mega menu au hover sur desktop */
