@@ -65,11 +65,17 @@
     </url>
     <url>
         <loc>https://promexa.eu/produits/accessoires-tech.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-11-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
-    
+    <url>
+        <loc>https://promexa.eu/produits/parapluies-personnalises.html</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <!-- SECTEURS -->
     <url>
         <loc>https://promexa.eu/secteurs/evenements-entreprise.html</loc>
@@ -133,13 +139,19 @@
     </url>
     <url>
         <loc>https://promexa.eu/secteurs/retail-commerce.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-11-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://promexa.eu/secteurs/associations-ong.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://promexa.eu/secteurs/centres-formation.html</loc>
+        <lastmod>2025-11-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
