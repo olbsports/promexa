@@ -46,12 +46,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://promexa.eu/produits/gourdes-personnalisees.html</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://promexa.eu/produits/chemises-entreprise.html</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>weekly</changefreq>
@@ -63,17 +57,31 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- COMMUNICATION VISUELLE -->
     <url>
-        <loc>https://promexa.eu/produits/accessoires-tech.html</loc>
+        <loc>https://promexa.eu/produits/panneaux-publicitaires.html</loc>
         <lastmod>2025-11-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://promexa.eu/produits/parapluies-personnalises.html</loc>
+        <loc>https://promexa.eu/produits/baches-publicitaires.html</loc>
         <lastmod>2025-11-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://promexa.eu/produits/toiles-tendues.html</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://promexa.eu/produits/stands-exposition.html</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- SECTEURS -->
