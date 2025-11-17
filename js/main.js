@@ -83,7 +83,7 @@
     }
 
     // ==========================================
-    // HEADER SCROLL EFFECT
+    // HEADER SCROLL EFFECT - COMPACT HEADER
     // ==========================================
 
     function initHeaderScroll() {
@@ -91,14 +91,27 @@
         if (!header) return;
 
         let lastScroll = 0;
+        const megamenus = document.querySelectorAll('.megamenu');
 
-        window.addEventListener('scroll', debounce(function() {
+        window.addEventListener('scroll', throttle(function() {
             const currentScroll = window.pageYOffset;
 
-            if (currentScroll > 100) {
-                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+            // Ajouter classe scrolled au-delà de 50px
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+
+                // Ajuster position des mega menus dynamiquement
+                const headerHeight = header.offsetHeight;
+                megamenus.forEach(menu => {
+                    menu.style.top = headerHeight + 'px';
+                });
             } else {
-                header.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
+                header.classList.remove('scrolled');
+
+                // Remettre position par défaut
+                megamenus.forEach(menu => {
+                    menu.style.top = '100px';
+                });
             }
 
             lastScroll = currentScroll;
